@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+.switch {
+  width: 90px;
+  height: 40px;
+  background: #272626;
+  border-radius: 20px;
+  position: relative;
+}
+.flicker {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 15px;
+  transition: 0.4s;
+  top: 5px;
+  left: 5px;
+  box-shadow: inset 4px 4px 4px #fff, inset -4px -4px 4px #7b7880;
+}
+.moon {
+  position: absolute;
+  top: 5px;
+  left: 55px;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 #fff;
+}
+.dark {
+  background: #393939;
+}
+.dark .flicker {
+  left: 55px;
+}
